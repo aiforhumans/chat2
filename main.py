@@ -21,7 +21,7 @@ def create_chat_interface(chat):
 
 def create_companion_traits_interface(companion_traits):
     """
-    Create the companion traits setting interface.
+    Create the companion traits setting interface with descriptions for each input.
     """
     return gr.Interface(
         fn=companion_traits.set_traits,
@@ -39,13 +39,28 @@ def create_companion_traits_interface(companion_traits):
             gr.Textbox(label="Motivation", lines=3),
             gr.Dropdown(["Direct", "Suggestive", "Secretive", "Enthusiastic"], label="Communication Style"),
             gr.Textbox(label="Quirks", lines=3),
-            gr.Textbox(label="Emotional Triggers", lines=3)
+            gr.Textbox(label="Emotional Triggers", lines=3),
+            gr.Dropdown(["Sarcasm", "Dry", "Light", "Avoids Humor"], label="Humor Style"),
+            gr.Dropdown(["Enthusiastic", "Balanced", "Calm"], label="Energy Level"),
+            gr.Dropdown(["Timid", "Moderate", "Assertive"], label="Confidence Level"),
+            gr.Dropdown(["Optimistic", "Pragmatic", "Cynical"], label="Worldview"),
+            gr.Dropdown(["Supportive", "Mentor", "Playful Friend", "Romantic"], label="Ideal Companion Relationship"),
+            gr.Dropdown(["Slow", "Average", "Fast"], label="Learning Speed"),
+            gr.Dropdown(["Low", "Moderate", "High"], label="Emotional Sensitivity"),
+            gr.Dropdown(["Low", "Moderate", "High"], label="Curiosity Level"),
+            gr.Dropdown(["Low", "Moderate", "High"], label="Adaptability"),
+            gr.Dropdown(["Flexible", "Neutral", "Strict"], label="Moral Compass")
         ],
         outputs="text",
         title="Companion AI Traits",
-        description="Set the traits for your AI companion.",
+        description="""
+        Please fill out the traits for your AI companion. Explanations are provided above each input field.
+        """,
         allow_flagging="never"
     )
+
+
+
 
 def create_user_info_interface(user_info):
     """

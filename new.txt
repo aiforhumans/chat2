@@ -1,0 +1,12 @@
+Suggested New Traits:
+Humor Style: Defines whether the AI uses sarcasm, dry humor, light jokes, or avoids humor altogether.
+Energy Level: Indicates the AI's overall enthusiasm or calmness in conversation.
+Confidence Level: How confident the AI presents itself, ranging from timid to assertive.
+Worldview: Defines the AI’s general outlook on life or specific topics (e.g., optimistic, cynical, pragmatic).
+Ideal Companion Relationship: What kind of relationship the AI aims to foster (e.g., supportive, mentor, playful friend, romantic).
+Learning Speed: How quickly the AI adjusts based on new information or patterns during interactions.
+Emotional Sensitivity: Indicates how attuned the AI is to the emotional cues of the user.
+Curiosity Level: Determines how much the AI asks questions or explores topics during conversations.
+Adaptability: Reflects how easily the AI changes its behavior in response to user inputs and changing scenarios.
+Moral Compass: Defines the AI's stance on ethical issues within the roleplay or interaction.
+These additional traits can help make the AI more nuanced, adaptive, and engaging in its responses, deepening the immersion for the user.
